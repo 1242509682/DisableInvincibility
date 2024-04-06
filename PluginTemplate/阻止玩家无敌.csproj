@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <AssemblyName>阻止玩家无敌v1.0.2.1【权限：免检无敌】</AssemblyName>
+    </PropertyGroup>
+    <ItemGroup>
+      <PackageReference Include="TShock" Version="5.*" />
+    </ItemGroup>
+</Project>
