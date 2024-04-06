@@ -1,7 +1,18 @@
-# PluginTemplate
+# 插件说明
+```
+作者：GK  
+修改：羽学  
+插件来源QQ群：232109072
 
-This repository acts as a baseline plugin to allow you to quickly and easily create new TShock plugins.
+插件的主要目的是监控并防止玩家在游戏中使用无敌或其他作弊行为。通过监听玩家的生命值、防御值、隐身状态、闪避状态以及治疗效果等信息的变化，对玩家的行为进行分析判断，当发现疑似无敌或非法修改生命值上限等情况时，会对违规玩家执行踢出操作。同时，为了避免并发问题，对玩家数据容器进行了同步锁处理。
 
-# Plugin Development
-
-For more information on TShock plugin development feel free to visit the [TShock repository](https://github.com/Pryaxis/TShock), the [TShock documentation](https://ikebukuro.tshock.co), the [TShock ReadMe](https://tshock.readme.io/docs/) or the official [TShock Discord](https://discord.com/invite/Cav9nYX).
+羽学给插件添加了一个权限名，避免它对服主、超管等用户组也会实施同样的检测惩罚，并注释掉了它原本可能的封禁手段带来的玩家不满。
+```
+## 权限
+```
+免检无敌
+```
+## 使用说明
+```
+1.将.dll文件放入ServerPlugins插件文件夹
+2.给管理员添加免检无敌权限：/group addperm admin 免检无敌
